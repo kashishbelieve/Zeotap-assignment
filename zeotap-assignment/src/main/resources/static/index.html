@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zeotap Ingestion UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📥 Zeotap Ingestion App</h1>
+
+        <label for="source">Select Source:</label>
+        <select id="source" onchange="toggleInputFields()">
+            <option value="clickhouse">ClickHouse</option>
+            <option value="csv">CSV File</option>
+        </select>
+
+        <div id="clickhouse-fields" class="input-section">
+            <input type="text" id="host" placeholder="Host (e.g., localhost)">
+            <input type="text" id="port" placeholder="Port (e.g., 8123)">
+            <input type="text" id="database" placeholder="Database (e.g., default)">
+            <button onclick="connectClickHouse()">Connect to ClickHouse</button>
+        </div>
+
+        <div id="csv-fields" class="input-section" style="display: none;">
+            <input type="file" id="csvFile">
+            <button onclick="uploadCSV()">Upload CSV</button>
+        </div>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
