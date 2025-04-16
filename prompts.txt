@@ -1,0 +1,10 @@
+Prompt 1: How to parse and read a CSV file in Java using Apache Commons CSV
+Prompt 2: How to upload a CSV file using Spring Boot and extract its schema
+Prompt 3: How to connect to ClickHouse database from a Java Spring Boot application
+Prompt 4: How to use JWT token for authentication while querying ClickHouse
+Prompt 5: How to implement file upload REST endpoint in Spring Boot
+Prompt 6: How to resolve 'withFirstRecordAsHeader()' deprecation warning in Apache Commons CSV
+Prompt 7: How to properly close CSVParser to prevent resource leaks
+Prompt 8: How to create a bidirectional flow between ClickHouse and flat files
+Prompt 9: How to display CSV or ClickHouse column names with checkboxes on a web UI
+Prompt 10: How to implement streaming or batching of data ingestion in Spring Boot
