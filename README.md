@@ -6,7 +6,7 @@ This is a full-stack assignment to integrate and test data source connectivity v
 
 ## 📁 Project Structure
 
-zeotap-assignment/ │ ├── backend/ # Spring Boot application │ ├── src/main/java/com/example/zeotap_assignment/ │ │ ├── ClickHouseController.java │ │ ├── ClickHouseConnectionRequest.java │ │ └── FileUploadController.java │ └── ... │ ├── frontend/ # Static web interface │ ├── index.html │ ├── styles.css │ └── script.js │ └── README.md
+zeotap-assignment/ │ ├── backend/ # Spring Boot application │ ├── src/main/java/com/example/zeotap_assignment/ │ │ ├── ClickHouseController.java │ │ ├── ClickHouseConnectionRequest.java │ │ └── FileUploadController.java │ └── ... │ ├── static/ # Static web interface │ ├── index.html │ ├── styles.css │ └── script.js │ └── README.md
 
 
 ---
@@ -23,10 +23,10 @@ zeotap-assignment/ │ ├── backend/ # Spring Boot application │ ├─�
 
 ## 🚀 Running the Backend (Spring Boot)
 
-1. **Navigate to the backend folder (if applicable)**
+1. **Navigate to the Zeotap-assignment folder**
 
 ```bash
-cd backend/
+cd zeotap-assignment/
 
 2. **Build and run the application
 mvn clean install
@@ -37,13 +37,9 @@ Backend will start at:
 http://localhost:8080
 
 🌐 Running the Frontend
-Open the frontend/index.html file directly in your browser
-or
-Use a local dev server like Live Server (VS Code) or:
+Open the static/index.html file directly in your browser
 
-cd frontend/
-
-This will start a local frontend server at something like http://localhost:3000
+It will start a local frontend server 
 
 🔁 API Endpoints
 1. 📡 Connect to ClickHouse
