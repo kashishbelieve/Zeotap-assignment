@@ -79,5 +79,5 @@ Simple JavaScript-based client
 Clean status messages with emojis 😊
 
 🙌 Author
-Kashish
+Kashish Ahuja
 Passionate about backend engineering, databases, and new technologies.
