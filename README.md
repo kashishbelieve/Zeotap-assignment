@@ -17,7 +17,6 @@ zeotap-assignment/ │ ├── backend/ # Spring Boot application │ ├─�
 
 - Java 17+
 - Maven 3.6+
-- Node.js (if running a local dev server for frontend, optional)
 - ClickHouse instance (optional, for real DB testing)
 
 ---
