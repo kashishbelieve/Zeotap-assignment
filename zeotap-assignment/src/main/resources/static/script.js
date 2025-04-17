@@ -5,24 +5,21 @@ function toggleInputFields() {
     document.getElementById("status").innerText = "";
 }
 
+
 async function connectClickHouse() {
     const host = document.getElementById("host").value;
     const port = document.getElementById("port").value;
     const database = document.getElementById("database").value;
 
-    const payload = {
-        host,
-        port: parseInt(port),
-        database
-    };
+    const queryParams = new URLSearchParams({
+        host: host,
+        port: port,
+        database: database
+    });
 
     try {
-        const response = await fetch("http://localhost:8080/api/connect-clickhouse", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(payload)
+        const response = await fetch(`http://localhost:8080/api/connect-clickhouse?${queryParams.toString()}`, {
+            method: "GET"
         });
 
         const result = await response.text();
@@ -32,6 +29,7 @@ async function connectClickHouse() {
         console.error(error);
     }
 }
+
 
 
 
